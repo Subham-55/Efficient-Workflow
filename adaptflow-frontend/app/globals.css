@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-board-bg: #0f1a14;
+  --color-board-panel: #16241c;
+  --color-board-panel-raised: #1d3226;
+  --color-copper: #d4a24c;
+  --color-copper-bright: #e8bc6a;
+  --color-silver: #8fa396;
+  --color-ink: #f1ede4;
+  --color-signal-healthy: #4ade80;
+  --color-signal-warning: #f5b942;
+  --color-signal-critical: #ef5a5a;
+  --color-signal-human: #8ab4f8;
+
+  --font-plex-sans: var(--font-plex-sans);
+  --font-plex-mono: var(--font-plex-mono);
+
+  --radius-node: 0px;
+  --radius-card: 8px;
+  --radius-pill: 4px;
+}
+
+:root {
+  --background: #0f1a14;
+  --foreground: #f1ede4;
+  --card: #16241c;
+  --card-foreground: #f1ede4;
+  --popover: #16241c;
+  --popover-foreground: #f1ede4;
+  --primary: #d4a24c;
+  --primary-foreground: #0f1a14;
+  --secondary: #1d3226;
+  --secondary-foreground: #f1ede4;
+  --muted: #16241c;
+  --muted-foreground: #8fa396;
+  --accent: #1d3226;
+  --accent-foreground: #f1ede4;
+  --destructive: #ef5a5a;
+  --border: #2a4a3a;
+  --input: #16241c;
+  --ring: #8ab4f8;
+  --chart-1: #4ade80;
+  --chart-2: #f5b942;
+  --chart-3: #ef5a5a;
+  --chart-4: #8ab4f8;
+  --chart-5: #d4a24c;
+  --radius: 0.5rem;
+  --sidebar: #0f1a14;
+  --sidebar-foreground: #f1ede4;
+  --sidebar-primary: #d4a24c;
+  --sidebar-primary-foreground: #0f1a14;
+  --sidebar-accent: #1d3226;
+  --sidebar-accent-foreground: #f1ede4;
+  --sidebar-border: #2a4a3a;
+  --sidebar-ring: #8ab4f8;
+}
+
+body {
+  background-color: #0f1a14;
+  color: #f1ede4;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
